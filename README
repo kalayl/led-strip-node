@@ -3,3 +3,11 @@ http://www.coolcomponents.co.uk/catalog/strip-ledm-addressable-p-706.html
 
 Code mostly translated from this example:
 http://www.sparkfun.com/datasheets/Components/LED/LED_Strip_Example.pde
+
+
+Update:
+Difficulty driving the led array with only the first led lighting up.
+This:
+http://learn.adafruit.com/light-painting-with-raspberry-pi/hardware
+suggests that powering the raspberry from usb is a surefire way of nuking it.
+Basically the LED's draw more power than the usb port can pump through.
