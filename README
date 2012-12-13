@@ -1,0 +1,5 @@
+A small test to make node drive a 32-led rgb strip as seen here:
+http://www.coolcomponents.co.uk/catalog/strip-ledm-addressable-p-706.html
+
+Code mostly translated from this example:
+http://www.sparkfun.com/datasheets/Components/LED/LED_Strip_Example.pde

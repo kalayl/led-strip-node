@@ -1,0 +1,17 @@
+{
+  "name": "led-strip-node",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "dependencies" : {
+      "async": "0.1.22",
+      "sleep": "1.1.0",
+      "onoff" : "0.1.0"
+  },
+  "author": "",
+  "license": "BSD"
+}
