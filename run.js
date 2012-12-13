@@ -1,7 +1,18 @@
 var sleep = require("sleep"),
     Gpio = require('onoff').Gpio,
     sdi = new Gpio(22, 'out'),
-    clk = new Gpio(18, 'out')
+    cki = new Gpio(18, 'out')
+
+// the LED RGB strip connects as follows:
+//  If you have a 4-pin connection:
+//  Blue = 5V
+//  Red = SDI
+//  Green = CKI
+//  Black = GND
+
+// for a gpio pinout
+// see https://github.com/rakeshpai/pi-gpio
+
 
 var stripColors = initStrip();
 stripColors[0] = 0xFF0000;
@@ -21,11 +32,11 @@ function sdiLo() {
 }
 
 function clockHi() {
-    clk.writeSync(1);
+    cki.writeSync(1);
 }
 
 function clockLo () {
-    clk.writeSync(0);
+    cki.writeSync(0);
 }
 
 function postFrame() {
@@ -64,6 +75,6 @@ function initStrip() {
 function shutdown () {
     console.log("shutdown");
     sdi.unexport();
-    clk.unexport();
+    cki.unexport();
     process.exit(0);
 }
