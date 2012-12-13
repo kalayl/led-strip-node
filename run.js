@@ -64,6 +64,6 @@ function initStrip() {
 function shutdown () {
     console.log("shutdown");
     sdi.unexport();
-    cki.unexport();
+    clk.unexport();
     process.exit(0);
 }
